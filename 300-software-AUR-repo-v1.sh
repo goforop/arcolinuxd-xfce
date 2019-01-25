@@ -24,7 +24,7 @@
 echo "Installing category Accessories"
 
 #sh AUR/install-caffeine-ng-v*.sh
-sh AUR/install-discord-v*.sh
+#sh AUR/install-discord-v*.sh
 
 
 echo "Installing category Development"
@@ -60,10 +60,10 @@ sh AUR/install-arc-gtk-theme-git-v*.sh
 sh AUR/install-downgrade-v*.sh
 sh AUR/install-inxi-v*.sh
 sh AUR/install-neofetch-v*.sh
-sh AUR/install-numix-circle-icon-theme-git-v*.sh
+#sh AUR/install-numix-circle-icon-theme-git-v*.sh
 sh AUR/install-pamac-aur-v*.sh
 sh AUR/install-paper-icon-theme-git-v*.sh
-sh AUR/install-papirus-icon-theme-git-v*.sh
+#sh AUR/install-papirus-icon-theme-git-v*.sh
 sh AUR/install-screenkey-v*.sh
 #sh AUR/install-tamzen-font-git-v*.sh
 sh AUR/install-ttf-font-awesome-v*.sh
