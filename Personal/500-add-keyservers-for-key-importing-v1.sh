@@ -12,13 +12,14 @@ set -e
 #   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. RUN AT YOUR OWN RISK.
 #
 ##################################################################################################################
+[ -d $HOME"/.gnupg" ] || mkdir -p $HOME"/.gnupg"
 
-echo "Change lock screen to standard lock screen in ArcoLinux ..."
+echo '
 
-sudo cp -f /etc/slim.conf.arcolinuxnew /etc/slim.conf
-sudo sed -i 's/current_theme       arcolinux_transfer/#current_theme       arcolinux_transfer/g' /etc/slim.conf
-sudo sed -i 's/#current_theme	     arcolinux_eyes/current_theme	     arcolinux_eyes/g' /etc/slim.conf
+keyserver hkp://pool.sks-keyservers.net:80
+keyserver hkps://hkps.pool.sks-keyservers.net:443
+keyserver hkp://ipv4.pool.sks-keyservers.net:11371' | sudo tee --append ~/.gnupg/gpg.conf
 
 echo "################################################################"
-echo "####               LOCK    SCREEN   APPLIED               ######"
+echo "###                  keyservers added                       ####"
 echo "################################################################"

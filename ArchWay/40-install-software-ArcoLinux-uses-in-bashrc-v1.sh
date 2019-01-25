@@ -1,11 +1,13 @@
 #!/bin/bash
-#set -e
+set -e
 ##################################################################################################################
 # Author	:	Erik Dubois
 # Website	:	https://www.erikdubois.be
 # Website	:	https://www.arcolinux.info
 # Website	:	https://www.arcolinux.com
 # Website	:	https://www.arcolinuxd.com
+# Website	:	https://www.arcolinuxb.com
+# Website	:	https://www.arcolinuxiso.com
 # Website	:	https://www.arcolinuxforum.com
 ##################################################################################################################
 #
@@ -13,11 +15,14 @@
 #
 ##################################################################################################################
 
-sudo sed -i 's/\[archlinuxfr\]/#\[archlinuxfr\]/g' /etc/pacman.conf
-sudo sed -i 's/SigLevel = Never/#SigLevel = Never/g' /etc/pacman.conf
-sudo sed -i 's/Server = http:\/\/repo.archlinux.fr\/$arch/#Server = http:\/\/repo.archlinux.fr\/$arch/g' /etc/pacman.conf
+echo "Installing the software ArcoLinux uses in .bashrc"
+
+sudo pacman -S --noconfirm --needed expac
+sudo pacman -S --noconfirm --needed hwinfo
+sudo pacman -S --noconfirm --needed reflector
+sudo pacman -S --noconfirm --needed youtube-dl
 
 
 echo "################################################################"
-echo "###                  archlinuxfr hashtagged out             ####"
+echo "###                  software installed                     ####"
 echo "################################################################"

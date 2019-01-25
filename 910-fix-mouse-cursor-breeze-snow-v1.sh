@@ -6,6 +6,8 @@ set -e
 # Website	:	https://www.arcolinux.info
 # Website	:	https://www.arcolinux.com
 # Website	:	https://www.arcolinuxd.com
+# Website	:	https://www.arcolinuxb.com
+# Website	:	https://www.arcolinuxiso.com
 # Website	:	https://www.arcolinuxforum.com
 ##################################################################################################################
 #
@@ -13,25 +15,12 @@ set -e
 #
 ##################################################################################################################
 
+echo "Everywhere Breeze-snow as cursor"
+echo "Change cursor if you want"
 
-########################################
-########        C O N K Y      #########
-########################################
+sudo cp -r Personal/settings/default/index.theme /usr/share/icons/default/
 
-
-echo "################################################################"
-echo "Downloading the files from github to tmp directory"
-
-rm -rf /tmp/aureola
-
-git clone https://github.com/erikdubois/Aureola /tmp/aureola
-
-# if there is already a folder in tmp, delete or else do nothing
-[ -d ~/.aureola ] && rm -rf ~/.aureola
-mv -f /tmp/aureola ~/.aureola
-
-rm -rf /tmp/aureola
 
 echo "################################################################"
-echo "###################    aureola installed  ######################"
+echo "####           TO SEE THE EFFECT YOU MUST LOG OFF         ######"
 echo "################################################################"
